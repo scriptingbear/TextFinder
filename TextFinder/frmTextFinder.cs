@@ -201,5 +201,14 @@ namespace TextFinder
                 "that does almost nothing useful. You're welcome.",
                 "Text Finder 2018 Professional", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void inputText_TextChanged(object sender, EventArgs e)
+        {
+            if (inputText.Text == "")
+            {
+                //if user manually empties the Input box, must clear Found Items
+                foundItems.Items.Clear();
+            }
+        }
     }//class frmTextFinder : Form
 }//TextFinder

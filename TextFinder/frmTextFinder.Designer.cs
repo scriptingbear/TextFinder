@@ -92,6 +92,7 @@
             this.inputText.TabIndex = 2;
             this.inputText.Text = "";
             this.toolTip1.SetToolTip(this.inputText, "Type or paste in text to be searched");
+            this.inputText.TextChanged += new System.EventHandler(this.inputText_TextChanged);
             // 
             // foundItems
             // 
@@ -204,7 +205,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTextFinder";
             this.Text = "Text Finder";
             this.Load += new System.EventHandler(this.frmTextFinder_Load);
