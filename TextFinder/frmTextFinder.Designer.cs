@@ -92,7 +92,6 @@
             this.inputText.TabIndex = 2;
             this.inputText.Text = "";
             this.toolTip1.SetToolTip(this.inputText, "Type or paste in text to be searched");
-            this.inputText.TextChanged += new System.EventHandler(this.inputText_TextChanged);
             // 
             // foundItems
             // 
